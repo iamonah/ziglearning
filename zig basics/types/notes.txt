@@ -1,0 +1,29 @@
+| Type   | Bits     | Common name                  | Precision (approx)    | Range (approx) | Typical use                          |
+| ------ | -------- | ---------------------------- | --------------------- | -------------- | ------------------------------------ |
+| `f16`  | 16 bits  | **Half precision**           | ~3 decimal digits     | ±6.5×10⁴       | small data, ML, GPUs                 |
+| `f32`  | 32 bits  | **Single precision**         | ~7 decimal digits     | ±3.4×10³⁸      | general purpose, fast math           |
+| `f64`  | 64 bits  | **Double precision**         | ~15–16 decimal digits | ±1.8×10³⁰⁸     | high precision math, default         |
+| `f80`  | 80 bits  | **Extended precision** (x87) | ~19 decimal digits    | ±1.2×10⁴⁹³²    | rare, legacy x86 only                |
+| `f128` | 128 bits | **Quad precision**           | ~34 decimal digits    | ±1×10⁴⁹³²      | ultra-high precision, scientific use |
+
+Literally any, from 1 to 65535 bits.
+
+Zig lets you choose exactly how many bits your integers use — not just 8, 16, 32, or 64.
+It’s one of the few modern languages that gives you bit-level precision and safety.
+
+signed integers type can hold both negative and postive Numbers
+unsigned integers type can hold only postive numbers it holds the full spectrun from 0
+
+
+the maximum number of bits is 65 thousand
+
+
+
+we need to tell the compiler the type of a var unlike fro constant cause they is a possiblity a value will not change
+
+if we set a comptime in front we are saying the var will not change from the value it was assigned to at comptime by the compiler we can use "compitme_int" type too
+
+comptime var mutable_int = 5;
+
+
+
