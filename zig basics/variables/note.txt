@@ -1,0 +1,11 @@
+variables can also hold types and refrences to functions 
+
+const top_level_number: Unsigned8BitInteger = 10;         //used the type
+const Unsigned8BitInteger = u8;  //created a type
+
+variables in zig can also hold functions
+
+const print = @import("std").debug.print;
+print("Const num: {}\n", .{const_num});
+
+
