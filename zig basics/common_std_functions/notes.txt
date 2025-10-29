@@ -1,0 +1,3 @@
+having specifies affect how the value is displayed
+
+we have other ways for printing data the standard libary has the log module which has 4 functions (debug, error, warn, and info)
