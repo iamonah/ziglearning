@@ -9,3 +9,12 @@ const print = @import("std").debug.print;
 print("Const num: {}\n", .{const_num});
 
 
+variables can hold
+Primitives
+Numbers
+True/False
+Null (used with optional type)
+undefined 
+- can be coerced to any type. 
+functions refrences
+Types
