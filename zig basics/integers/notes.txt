@@ -1,0 +1,21 @@
+values or operations to use to account for potential overflow this operations are called rapping and saturations avaible for all math operations except division
+
+
+used for type casting
+@as(u16, num1)
+takes the type we want to cast to and the value
+
+integer bit width determine how many values the type can hold
+number of values = 2^(bit width)
+
+unsigned integers [0+]
+
+signed integes[-0+]
+
+for handling overflows from operations such as +, -, * except division we use 
+the wrapping operations and stautariton operations
+
++% (wrapping add): Always wraps the result modulo the bit width (256 for u8). No panic—guaranteed to fit back in u8.
++| (saturating add): Clamps the result to the type's max (255 for u8) on overflow. No panic—returns "capped" value.
+
+integer hold decimal by defual but can hold hex, bin, octal too values can contain _ underscores for readability e.g 100_00 
