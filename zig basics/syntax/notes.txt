@@ -1,0 +1,21 @@
+In Zig, the { .foo = "bar", .baz = 42 } (or shorthand { "bar", 42 } for positional) is an anonymous struct literal:
+
+Zig's std.debug.print(fmt, .{ arg1, arg2 }) expects an anonymous struct literal as the second arg—positional atches {s}, {d} placeholders in order. It's comptime-resolved, so no runtime boxing.
+
+
+
+NOTE:
+we have doc comments and normal comments oc comments have 3 slashes and normal comments have 2 comments they are completely ignored by the compiler and the doc comment can only apppear in certain places like in the begining of a function
+
+//normal
+///doc comment
+
+the syling convetino of zig is to write functions in cammel case custom type in title case everything in snake case
+
+Every zig program needs an entry point name main takes no argument and returns void or u8
+
+const = contant
+var mutable 
+to print to the console you import the standard libary in it you find a debug libary that contains the print functions it has 
+
+string function takes 2 paramerts first is format string which can have placeholders and the second is  a tuple of variable or anonymous struct

@@ -1,0 +1,7 @@
+You're spot-on that const means "cannot be changed"—but it's about binding a name to a value (or type) 
+immutably, not "reserving the word struct forever." Think of it as an alias that's glued in place:
+
+Without const: struct { x: i32 } { .x = 10 }; (anonymous—use once, gone).
+
+If it were var Point = struct { ... };, you could reassign Point = someOtherType; 
+(weird, but allowed)—but const prevents that chaos.
