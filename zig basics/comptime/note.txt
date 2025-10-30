@@ -1,0 +1,27 @@
+-comptime(compile time) what happens during compilation
+-runtime is what happens during program execution
+
+compile konw expressions are used to optimize the code during execution
+
+example of compile values
+1. harcoded values
+2. results of expressions with comptime values
+
+comptime keyword can be used with:
+
+1. Variables: The variable exists only at compile time and can be modified during compilation.
+
+2. Function parameters: The argument must be known at compile time when calling the function.
+
+3. Expressions: The expression and all its values are evaluated at compile time.
+
+4. (Bonus) Blocks: Code inside runs during compilation (e.g., comptime { ... }).
+
+
+comptime means “the compiler executes this before your program even runs.”
+It’s great for precomputing, code generation, or creating optimized constants.
+
+If something is known at comptime,
+it means the compiler already knows it and may precompute it,
+but your runtime program can still use the result —
+the runtime just doesn’t “redo” the work.
