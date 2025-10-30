@@ -1,0 +1,20 @@
+zig has no dedicated type for characts 
+each character has a numbric represetaion as defined by ascii
+
+we use numeric types to represent characters
+
+zig uses u8 to represent characters
+character literals are represented by single quotes
+
+
+string is an array of characters 8 bit array 
+
+string literals are surrounded by double quotes 
+
+strings can be concatenated with ++ can be repeated with **
+
+the type of a string literal is a single item pointer to a constant null terminated byte array
+
+*const [14:0]u8 
+
+0 represent null terminated with 14 array of elements
