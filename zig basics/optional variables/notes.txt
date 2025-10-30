@@ -1,0 +1,20 @@
+optional is a type that can hold a null value
+
+syntax
+var optional_int: ?u8 = null;
+
+to get the value:
+default optional unwrap operator
+optional unwrap operator
+
+syntax
+
+[optional_variable] orelse [default value]
+optional_int orelse 0;
+- if optional is not null its value is returned
+- otherwise the default value is returned
+
+optional unwrap
+
+syntax for optional unwrap returns value if present else program panics best way is using if block to read it out incase not present
+optional_int.?  
