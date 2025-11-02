@@ -104,3 +104,8 @@ pub fn main() void {
 // it’s saying “Here are the possible states this type can have.”
 
 // ou can then create variables of that type, like var s: OrderStatus = .new
+
+
+//enumgs can have functions(methods) and variables same rules apply as for struct variable belong to the type
+
+// functions can recive the enum been called o if the first parameter has the same type as the enum
