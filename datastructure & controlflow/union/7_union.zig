@@ -66,3 +66,4 @@ pub fn main() void {
 // allows us determine active field programatically 
 // must have same field as underlying enum 
 // taggeg union can be infered use enum keyword instead of a specific enum DataTypes
+//unions can have vairables and functions same rules as structs or enums apply
